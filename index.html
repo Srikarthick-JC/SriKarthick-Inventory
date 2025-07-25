@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Notepad</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="wrapper">
+    <section class="card">
+      <h1 class="title">✍️ Smart Notepad</h1>
+      <p class="subtitle">A clean, minimal, personal notepad with login</p>
+
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Email" />
+        <input type="password" id="password" placeholder="Password" />
+      </div>
+
+      <div class="actions">
+        <button class="btn primary" onclick="register()">Register</button>
+        <button class="btn primary" onclick="login()">Login</button>
+        <button class="btn secondary" onclick="logout()">Logout</button>
+      </div>
+    </section>
+
+    <section class="card hidden" id="notepadSection">
+      <h2 class="section-title">🗒️ Your Note</h2>
+      <textarea id="noteArea" placeholder="Start typing your thoughts..."></textarea>
+      <div class="actions">
+        <button class="btn primary" onclick="saveNote()">💾 Save</button>
+        <button class="btn secondary" onclick="loadNote()">📖 Load</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Load the script (as module) -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>

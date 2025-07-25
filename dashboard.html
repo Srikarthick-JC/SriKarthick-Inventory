@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="dashboard-wrapper">
+    <header class="dashboard-header">
+      <h1 class="title">📋 Dashboard – <span id="userEmail">Loading...</span></h1>
+      <div class="user-info">
+        <a href="new-note.html" class="btn primary">➕ Create New Note</a>
+        <button class="btn secondary" id="logoutBtn">🚪 Logout</button>
+      </div>
+    </header>
+
+    <section class="note-preview-grid" id="notesContainer">
+      <!-- Notes will be displayed here -->
+    </section>
+  </main>
+
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>

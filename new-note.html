@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>New Note</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="wrapper">
+    <section class="card">
+      <h1 class="title">📝 New Note</h1>
+
+      <input type="text" id="noteTitle" placeholder="Enter note title" />
+      <textarea id="noteContent" placeholder="Start typing your note..."></textarea>
+
+      <div class="actions">
+        <button class="btn primary" onclick="saveNote()">💾 Save Note</button>
+        <a href="dashboard.html" class="btn secondary">⬅ Back to Dashboard</a>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="new-note.js"></script>
+</body>
+</html>
